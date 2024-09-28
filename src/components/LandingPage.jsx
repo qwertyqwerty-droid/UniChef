@@ -31,10 +31,10 @@ const LandingPage = () => {
 
   return (
     <div>
-      <header className="bg-light py-3">
+      <header className="py-3">
         <div className="container-fluid d-flex justify-content-between align-items-center">
           <h2 className="text-center d-none d-md-block">Unichef</h2>
-          <nav className="navbar navbar-expand-lg navbar-light">
+          <nav className="navbar navbar-expand-lg">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -59,8 +59,8 @@ const LandingPage = () => {
             <div className="d-flex">
               {isLoggedIn ? (
                 <div className="dropdown">
-                  <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    {userName} <i className="bi bi-person"></i>
+                  <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    {userName}
                   </button>
                   <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <li><a className="dropdown-item" href="#">Profile</a></li>
@@ -70,9 +70,9 @@ const LandingPage = () => {
                 </div>
               ) : (
                 <div>
-                  <button className="btn btn-danger me-2" onClick={toggleLogin}>Log In</button>
+                  <button className="btn me-2" onClick={toggleLogin}>Log In</button>
                   <Link to="/signup">
-                    <button className="btn btn-outline-success">Sign Up</button> {/* Link to the signup form */}
+                    <button className="btn">Sign Up</button>
                   </Link>
                 </div>
               )}
@@ -107,9 +107,9 @@ const LandingPage = () => {
                   <span className="visually-hidden">Next</span>
                 </button>
               </div>
-              <div className="mb-4" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 2 }}>
+              <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 2 }}>
                 <Link to="/restaurants">
-                  <button className="btn btn-danger btn-lg" style={{ fontSize: '1.8rem', padding: '20px 40px', transition: 'transform 0.3s' }} onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'} onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}>Order Now</button>
+                  <button className="btn btn-lg">Order Now</button>
                 </Link>
               </div>
             </div>
@@ -129,11 +129,11 @@ const LandingPage = () => {
         <section className="restaurants-portal mt-5">
           <h3>Available Restaurants</h3>
           <div className="restaurant-list">
-            <Link to="/restaurants" className="restaurant-item border p-3 mb-3 d-block text-decoration-none text-dark">
+            <Link to="/restaurants" className="restaurant-item border p-3 mb-3 d-block text-decoration-none">
               <h5>Restaurant 1</h5>
               <p>Cuisine: Italian</p>
             </Link>
-            <Link to="/restaurants" className="restaurant-item border p-3 mb-3 d-block text-decoration-none text-dark">
+            <Link to="/restaurants" className="restaurant-item border p-3 mb-3 d-block text-decoration-none">
               <h5>Restaurant 2</h5>
               <p>Cuisine: Indian</p>
             </Link>
@@ -142,16 +142,16 @@ const LandingPage = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-dark text-white py-4">
+      <footer className="py-4">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
               <h5>Information</h5>
               <ul className="list-unstyled">
-                <li><a href="#" className="text-white">About Us</a></li>
-                <li><a href="#" className="text-white">Terms of Service</a></li>
-                <li><a href="#" className="text-white">Privacy Policy</a></li>
-                <li><a href="#" className="text-white">Domain Policy</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Domain Policy</a></li>
               </ul>
             </div>
 
@@ -160,9 +160,9 @@ const LandingPage = () => {
               <p>Email: contact@unichef.com</p>
               <p>Phone: +123 456 789</p>
               <div>
-                <a href="#" className="text-white me-3"><i className="bi bi-facebook"></i></a>
-                <a href="#" className="text-white me-3"><i className="bi bi-whatsapp"></i></a>
-                <a href="#" className="text-white me-3"><i className="bi bi-twitter"></i></a>
+                <a href="#"><i className="bi bi-facebook"></i></a>
+                <a href="#"><i className="bi bi-whatsapp"></i></a>
+                <a href="#"><i className="bi bi-twitter"></i></a>
               </div>
             </div>
           </div>
