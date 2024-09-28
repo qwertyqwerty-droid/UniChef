@@ -1,0 +1,46 @@
+ 
+/* SignUpForm.css */
+
+form {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+  }
+  
+  .invalid-feedback {
+    color: red;
+    font-size: 0.9rem;
+  }
+  
+  .btn-outline-secondary {
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: #ff5722;
+    border-color: #ff5722;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff7043;
+    border-color: #ff7043;
+  }
+
+  /* src/components/SignUpForm.css */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFEB3B; /* yellow background */
+  }
+  
+  input {
+    border-radius: 4px; /* rounded corners */
+  }
+  
+  input:focus {
+    box-shadow: 0 0 5px rgba(0, 150, 255, 0.5);
+  }
+  

@@ -1,0 +1,47 @@
+ 
+/* LandingPage.css */
+
+/* General box styling */
+.box {
+    border: 2px solid #ff5722; /* Orange border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #ffffff; /* White background */
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    border: 2px solid #4caf50; /* Green border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    margin-top: 20px; /* Space from other elements */
+  }
+  
+  /* Restaurant items styling */
+  .restaurant-item {
+    border: 2px solid #2196f3; /* Blue border */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animation */
+  }
+  
+  .restaurant-item:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  /* Footer styling */
+  footer {
+    border-top: 4px solid #ff5722; /* Top border for the footer */
+  }
+  
+  footer h5 {
+    border-bottom: 2px solid #4caf50; /* Bottom border for section headers */
+    padding-bottom: 10px; /* Space below header */
+  }
+  
+  /* Carousel images styling */
+  .carousel-item img {
+    border-radius: 8px; /* Rounded corners for images */
+    border: 2px solid #ddd; /* Light grey border */
+  }
+  

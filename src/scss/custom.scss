@@ -1,0 +1,9 @@
+// Import Bootstrap's SCSS source files
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Customize your colors
+$body-bg: #121212; /* Dark background */
+$body-color: #f8f9fa; /* Light text */
+$primary: #ff8c00; /* Orange accent */
+
+// Any additional custom styles
