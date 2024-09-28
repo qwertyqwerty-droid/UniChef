@@ -70,9 +70,9 @@ const LandingPage = () => {
                 </div>
               ) : (
                 <div>
-                  <button className="btn btn-danger me-2" onClick={toggleLogin} style={{ marginRight: '15px' }}>Log In</button>
+                  <button className="btn btn-danger me-2" onClick={toggleLogin}>Log In</button>
                   <Link to="/signup">
-                    <button className="btn btn-outline-success">Sign Up</button>
+                    <button className="btn btn-outline-success">Sign Up</button> {/* Link to the signup form */}
                   </Link>
                 </div>
               )}
@@ -131,7 +131,7 @@ const LandingPage = () => {
           <div className="restaurant-list">
             <Link to="/restaurants" className="restaurant-item border p-3 mb-3 d-block text-decoration-none text-dark">
               <h5>Restaurant 1</h5>
-              <p>Cuisine: Nsima ya Nyemba</p> {/* Updated text */}
+              <p>Cuisine: Italian</p>
             </Link>
             <Link to="/restaurants" className="restaurant-item border p-3 mb-3 d-block text-decoration-none text-dark">
               <h5>Restaurant 2</h5>
